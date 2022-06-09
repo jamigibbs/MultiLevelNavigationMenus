@@ -119,7 +119,7 @@ export default class MenusManager extends LightningElement {
     wireFetchMenu;
     @wire(fetchMenu,{menuId: '$menuId', language: '$languageFilter'})
     fetchMenuImperativeWiring(result) 
-    {s
+    {
         if (result.data) {
             try {
                 this.menuItemListResult = result;

@@ -59,5 +59,9 @@
         <members>Menu__c-Menu Layout</members>
 		<name>Layout</name>
 	</types>
+    <types>
+        <members>Languages</members>
+        <name>GlobalValueSet</name>
+    </types>
     <version>48.0</version>
 </Package>
