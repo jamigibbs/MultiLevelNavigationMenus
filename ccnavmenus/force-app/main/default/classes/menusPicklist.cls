@@ -32,7 +32,7 @@ global class menusPicklist extends VisualEditor.DynamicPickList {
         VisualEditor.DataRow value2 = new VisualEditor.DataRow('[Name Filter]','nameFilter');
         myValues.addRow(value2);
         
-        for(ccnavmenus__Menu__c menu : [SELECT Id, Name FROM ccnavmenus__Menu__c ORDER BY Name LIMIT 100])
+        for(Menu__c menu : [SELECT Id, Name FROM Menu__c ORDER BY Name LIMIT 100])
         {
             VisualEditor.DataRow value = new VisualEditor.DataRow(menu.Name, menu.Id + '');
             myValues.addRow(value);

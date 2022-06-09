@@ -119,7 +119,7 @@ export default class MenusManager extends LightningElement {
     wireFetchMenu;
     @wire(fetchMenu,{menuId: '$menuId', language: '$languageFilter'})
     fetchMenuImperativeWiring(result) 
-    {
+    {s
         if (result.data) {
             try {
                 this.menuItemListResult = result;
@@ -314,8 +314,8 @@ export default class MenusManager extends LightningElement {
         {
             this.activeLanguageSections = [];
             let mi = this.menuItemMap[this.selectedMenuItemIdForEdit];
-            if(mi !== undefined && mi !== null && mi.ccnavmenus__Language__c !== undefined && mi.ccnavmenus__Language__c !== null &&
-                mi.ccnavmenus__Language__c.trim() !== '')
+            if(mi !== undefined && mi !== null && mi.Language__c !== undefined && mi.Language__c !== null &&
+                mi.Language__c.trim() !== '')
             {
                 this.activeLanguageSections.push('language');
             }
@@ -350,6 +350,7 @@ export default class MenusManager extends LightningElement {
         this.closeCreateEditModal();
 
     }
+
 
     openDeleteMIModal() 
     {

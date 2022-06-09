@@ -38,9 +38,9 @@ export default class NavMenu extends LightningElement {
     
     get menuAriaAnnouncement()
     {
-        if(this.items.length > 0)
+        if(this.items?.length > 0)
         {
-            return ' Menu first Item of ' + this.items.length + ' items';
+            return ' Menu first Item of ' + this.items?.length + ' items';
         }
         else 
         {

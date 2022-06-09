@@ -1,40 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>menusController</members>
+        <members>menusManagerController</members>
+        <members>menusPicklist</members>
+        <members>languagePicklist</members>
+        <members>menusControllerTest</members>
+        <members>menusManagerControllerTest</members>
+        <members>menusPicklistTest</members>
+        <members>languagePicklistTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>iconUtils</members>
+        <members>menusManager</members>
+        <members>navMenu</members>
+        <members>primitiveIcon</members>
+        <members>tree</members>
+        <members>treeItem</members>
+        <members>utils</members>
+        <members>utilsPrivate</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
-        <members>*</members>
+        <members>menusManager</members>
+        <members>navMenu</members>
         <name>StaticResource</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Menu__c</members>
+        <members>Menu_Item__c</members>
         <name>CustomObject</name>
     </types>
+    <types>s
+        <members>Menu_Item__c.External_Id__c</members>
+        <members>Menu_Item__c.Language__c</members>
+        <members>Menu_Item__c.Menu__c</members>
+        <members>Menu_Item__c.Menu_Item__c</members>
+        <members>Menu_Item__c.Menu_Path__c</members>
+        <members>Menu_Item__c.Open_in_New_Window__c</members>
+        <members>Menu_Item__c.Position__c</members>
+        <members>Menu_Item__c.Public__c</members>
+        <members>Menu_Item__c.SLDS_Icon__c</members>
+        <members>Menu_Item__c.SLDS_Icon_Position__c</members>
+        <members>Menu_Item__c.URL__c</members>
+        <name>CustomField</name>
+    </types>
+	<types>
+		<members>Community_Menus</members>
+		<name>FlexiPage</name>
+	</types>
     <version>48.0</version>
 </Package>
+

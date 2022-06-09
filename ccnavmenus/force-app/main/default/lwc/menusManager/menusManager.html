@@ -132,7 +132,7 @@
                     <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
                         
                             <lightning-record-form
-                                object-api-name="ccnavmenus__Menu__c"
+                                object-api-name="Menu__c"
                                 layout-type="Full"
                                 mode="edit"
                                 oncancel={closeCreateModal}
@@ -167,7 +167,7 @@
 
                                 <lightning-record-form
                                     record-id={menuId}
-                                    object-api-name="ccnavmenus__Menu__c"
+                                    object-api-name="Menu__c"
                                     layout-type="Full"
                                     mode="edit"
                                     oncancel={closeEditModal}
@@ -236,46 +236,46 @@
                         <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-4" style="height: 800px;">
                             
                                 <lightning-record-edit-form record-id={selectedMenuItemIdForEdit}
-                                object-api-name="ccnavmenus__Menu_Item__c" onsuccess={handleCreateEditSuccess}>
+                                object-api-name="Menu_Item__c" onsuccess={handleCreateEditSuccess}>
                                     <lightning-messages>
                                     </lightning-messages>
 
-                                    <lightning-input-field field-name="ccnavmenus__Menu__c" value={menuId} variant="label-inline" disabled>
+                                    <lightning-input-field field-name="Menu__c" value={menuId} variant="label-inline" disabled>
                                     </lightning-input-field>
 
-                                    <lightning-input-field if:true={selectedMenuItemIdForCreate} field-name="ccnavmenus__Menu_Item__c" value={selectedMenuItemIdForCreate} variant="label-inline" disabled>
+                                    <lightning-input-field if:true={selectedMenuItemIdForCreate} field-name="Menu_Item__c" value={selectedMenuItemIdForCreate} variant="label-inline" disabled>
                                     </lightning-input-field>
 
                                     <lightning-input-field field-name="Name" variant="label-inline" required>
                                     </lightning-input-field>
 
-                                    <lightning-input-field field-name="ccnavmenus__URL__c" variant="label-inline" required>
+                                    <lightning-input-field field-name="URL__c" variant="label-inline" required>
                                     </lightning-input-field>
 
-                                    <lightning-input-field field-name="ccnavmenus__SLDS_Icon__c" variant="label-inline">
+                                    <lightning-input-field field-name="SLDS_Icon__c" variant="label-inline">
                                     </lightning-input-field>
 
-                                    <lightning-input-field field-name="ccnavmenus__SLDS_Icon_Position__c" variant="label-inline">
+                                    <lightning-input-field field-name="SLDS_Icon_Position__c" variant="label-inline">
                                     </lightning-input-field>
 
-                                    <lightning-input-field field-name="ccnavmenus__Open_in_New_Window__c" variant="label-inline">
+                                    <lightning-input-field field-name="Open_in_New_Window__c" variant="label-inline">
                                     </lightning-input-field>
 
-                                    <lightning-input-field field-name="ccnavmenus__Public__c" variant="label-inline">
+                                    <lightning-input-field field-name="Public__c" variant="label-inline">
                                     </lightning-input-field>
 
-                                    <lightning-input-field field-name="ccnavmenus__Position__c" variant="label-inline" required>
+                                    <lightning-input-field field-name="Position__c" variant="label-inline" required>
                                     </lightning-input-field>
                                     
                                     <lightning-accordion active-section-name={activeLanguageSections}
                                         allow-multiple-sections-open>
                                         <lightning-accordion-section name="language" label="Language">
-                                            <lightning-input-field field-name="ccnavmenus__Language__c" variant="label-inline">
+                                            <lightning-input-field field-name="Language__c" variant="label-inline">
                                             </lightning-input-field>
                                         </lightning-accordion-section>
                                     </lightning-accordion>
 
-                                    <center>
+
                                         <div class="slds-m-top_medium">
                                             <lightning-button
                                                 variant="brand"
@@ -287,7 +287,7 @@
                                             <lightning-button label="Cancel" title="Cancel"
                                                     onclick={closeCreateEditModal}></lightning-button>
                                         </div>
-                                    </center>
+
                                 </lightning-record-edit-form>
     
                             
