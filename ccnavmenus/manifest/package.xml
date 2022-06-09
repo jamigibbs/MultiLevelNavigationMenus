@@ -54,6 +54,10 @@
         <members>Admin</members>
         <name>Profile</name>
     </types>
+	<types>
+		<members>Menu_Item__c-Menu Item Layout</members>
+        <members>Menu__c-Menu Layout</members>
+		<name>Layout</name>
+	</types>
     <version>48.0</version>
 </Package>
-
