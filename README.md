@@ -1,3 +1,26 @@
+# Installation Steps
+
+This repo is a fork of the [SalesforceLabs/MultiLevelNavigationMenus](https://github.com/SalesforceLabs/MultiLevelNavigationMenus). It was forked so that the metadata could be deployed from a local manifest instead of via managed package.
+
+## Steps to deploy
+
+#### Pre-steps
+1. Clone this repo: `git clone https://github.com/jamigibbs/MultiLevelNavigationMenus.git` and `cd` into the `MultiLevelNavigationMenus/ccnavmenus` directory.
+
+2. Have a scratch, sandbox, or dev org available. It's recommended to use a [scratch org](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs_create.htm) for testing. The manifest includes the admin profile which you may not want to deploy into an existing development org.
+    - `sfdx force:org:create -f project-scratch-def.json -a MyScratchOrg --setdefaultusername`
+
+#### Steps
+1. In the org, enable Digital Experiences in setup and create an Experience site if there isn't one already.
+2. Deploy `/manifest/package.xml`.
+    - For a non-scratch org, right click the manifest and deploy to the connected org.
+    - For a scratch org, run `sfdx force:source:deploy -u MyScratchOrg -x manifest/package.xml`
+3. Assign the Community Menu Lighting App page: 
+   - Setup > User Interface > Lightning App Builder > Community Menus (edit)
+   - Click "Activation" and click "Set as Org Default". 
+   - Save.
+
+
 # Multi-Level Navigation Menus for Experience Cloud
 
 
