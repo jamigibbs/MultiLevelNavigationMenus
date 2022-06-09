@@ -32,7 +32,7 @@
         <members>Menu_Item__c</members>
         <name>CustomObject</name>
     </types>
-    <types>s
+    <types>
         <members>Menu_Item__c.External_Id__c</members>
         <members>Menu_Item__c.Language__c</members>
         <members>Menu_Item__c.Menu__c</members>
@@ -50,7 +50,7 @@
         <members>Community_Menus</members>
         <name>FlexiPage</name>
     </types>
-        <types>
+    <types>
         <members>Admin</members>
         <name>Profile</name>
     </types>
