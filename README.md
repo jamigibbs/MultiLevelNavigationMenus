@@ -9,6 +9,7 @@ This repo is a fork of the [SalesforceLabs/MultiLevelNavigationMenus](https://gi
 
 2. Have a scratch, sandbox, or dev org available. It's recommended to use a [scratch org](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs_create.htm) for testing. The manifest includes the admin profile which you may not want to deploy into an existing development org.
     - `sfdx force:org:create -f project-scratch-def.json -a MyScratchOrg --setdefaultusername`
+    - `sfdx force:org:open -u MyScratchOrg`
 
 #### Steps
 1. In the org, enable Digital Experiences in setup and create an Experience site if there isn't one already.
